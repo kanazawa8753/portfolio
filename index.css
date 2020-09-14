@@ -82,7 +82,7 @@ cursor: pointer;
 
 .profile-list{
   border:3px dotted rgb(158, 175, 192);
-  width:60%;
+  width:80%;
   margin:0 auto;
   padding-bottom:20px;
 }
@@ -259,6 +259,7 @@ text-align:center;
 .main-list{
   display:flex;
   justify-content: center;
+  width:100%;
  }
 
  .web{
@@ -279,42 +280,42 @@ border-radius: 50%;
 }
 
 .main-sub-title{
-  font-size:28px;
+  font-size:17px;
 }
 
 .main-sub-title::before{
   content: '「';
-margin-right:40px;
+margin-right:20px;
 color:white;
-font-size:50px;
+font-size:25px;
 }
 
 .main-sub-title::after{
   content: '」';
-  margin-left:40px;
+  margin-left:20px;
   color:white;
-  font-size:50px;
+  font-size:25px;
   }
 
 .web-title::before{
 content: '「';
-margin-right:20px;
+margin-right:10px;
 
 }
 
 .web-title::after{
   content: '」';
-  margin-left:20px;
+  margin-left:10px;
   }
 
   .blog-title::before{
     content: '「';
-    margin-right:20px;
+    margin-right:10px;
     }
     
     .blog-title::after{
       content: '」';
-      margin-left:20px;
+      margin-left:10px;
       }
 
 .web-coment{
@@ -334,7 +335,14 @@ margin-right:20px;
   color:white;
   font-weight:bold;
   padding:15px 30px;
-  padding-bottom:30px;
+}
+
+.main{
+  max-width:100%;
+}
+
+.lasela,.lasela-sub{
+  height:200px;
 }
 
 .itirango{
@@ -347,7 +355,7 @@ padding-top:30px;
 
 .lasela-isara{
   height:300px;
-
+  max-width:100%;
 }
 
 
@@ -391,3 +399,4 @@ padding-top:30px;
   font-size:30px;
   border-radius: 50%;
 }
+

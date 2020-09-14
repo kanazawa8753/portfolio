@@ -335,13 +335,20 @@ margin-right:10px;
   color:white;
   font-weight:bold;
   padding:15px 30px;
-  padding-bottom:70px;
 }
 
 .main{
   max-width:100%;
 }
 
+
+.sakuhin-itiran{
+  background-color:#1d809f;
+  color:white;
+  font-weight:bold;
+  padding-bottom:90px;
+  padding-top:20px;
+}
 .lasela,.lasela-sub{
   height:200px;
 }
@@ -368,9 +375,6 @@ padding-top:30px;
   border-radius: 10px;
 
 }
-
-.webseisaku{
-  padding-bottom:50px;
 
 
 .app:hover{
@@ -403,4 +407,5 @@ padding-top:30px;
   font-size:30px;
   border-radius: 50%;
 }
+
 

@@ -1,6 +1,9 @@
 body{
   margin: 0 auto;
   text-align: center;
+  color: #333333;
+    line-height: 1.6;
+    font-family: "�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
 }
 
 li{
@@ -19,59 +22,111 @@ svg{
 
 .header-menu{
   display:flex;
-  line-height:40px;
-  margin-bottom: -22px;
+  line-height:20px;
   background: lightslategray;
- 
-  
+}
+
+
+.header-list svg{
+  position: fixed;
+  right: 0px;
+  color: #fff;
+  background: rgba(52, 58, 64, .5);
+  line-height: 50px;
+  z-index: 999;
+  padding:5px 5px;
+  font-size:50px;
 }
 
 .header-title{
+  font-size:30px;
   margin-left: 30px;
   color:white;
 }
 
-.header-list{
-  display:flex;
+.list-menu{
+  background-color:#f7c23c;
+  opacity:0.8;
+  height:1000px;
+  font-weight: bold;
+  position: fixed;
+  padding-top:20px;
+  right:0px;
+  display:none;
+  margin-top:-10px;
+}
+
+.close-modal{
+  cursor: pointer;
+  padding-left:70px;
+}
+
+.list-menu li{
+
+font-size:20px;
+right:0px;
+padding-bottom:20px;
+padding-top:40px;
+padding-left:-20px;
+padding-right:30px;
 
 }
 
-.home{
-  display:block;
-  margin-right: 30px;
-  margin-top: 5px; 
-  background-color: slategrey;
-  line-height: 60px;
-  padding:0 40px;
-  transition: all 2s;
+
+.list-menu li:hover{
+color:white;
+}
+.navi:hover{
+cursor: pointer;
 }
 
-.home a{
-  display:block;
+.profile-list{
+  border:3px dotted rgb(158, 175, 192);
+  width:60%;
+  margin:0 auto;
+  padding-bottom:20px;
 }
 
-.home:hover{
-  color: lightcyan;
-  background-color: lightcyan;
-  transition: all 0.8s;
-}
 
 .sub-header{
-  background-image: url(/Users/kanazawaakira/Desktop/ポートフォリオ/IMG_3923.jpeg);
+  background-image: url(picture_pc_0c274de1b76f4063c7ce088be3b57004.jpg);
   background-size:cover;
   width:100%;
   height:800px;
+  padding-top:20px;
+}
+
+.kotira{
+  background-color:rgb(158, 175, 192);
+  color:white;
+  padding:15px 40px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.kotira:hover{
+  background-color: white;
+  color:slategrey;
+}
+
+.sho{
+  padding-bottom:20px;
+  background-color:slategrey;
+  color:white;
+  padding-top:20px;
 }
 
 .sub-header-title{
 font-size: 30px;
 padding-top: 400px;
 color:white;
+padding-bottom:30px;
 }
 
 .btn{
   margin-top: 50px;
 }
+
 .about{
   background-color: slategrey;
   color:white;
@@ -86,15 +141,6 @@ color:white;
   transition: all 0.8s;
 }
 
-.footer{
-  text-align: left;
-  margin-top: 40px;
-  border-top: 1px solid slategrey;
-  color:slategrey;
-  font-size: small;
-  margin-left: 30px;
-}
-
 
 .main-logo{
   margin-top: 100px;
@@ -107,10 +153,6 @@ color:white;
   border-radius: 50%;
 }
 
-.sho{
-  border-top: 1px solid slategrey;
-  margin-top:100px;
-}
 
 .pro-kist{
   margin-top: 30px;
@@ -119,7 +161,12 @@ color:white;
 
 .fa-twitter{
   margin-top: 20px;
-  
+  background-color:black;
+  color:white;
+  padding:20px 20px;
+  font-size:20px;
+  border-radius: 50%;
+  margin-bottom:20px;
 }
 
 .contact{
@@ -127,20 +174,24 @@ color:white;
   background-size: cover;
   height:500px;
   color:white;
-  margin-top: 80px;
+  
+  padding-top:40px;
 }
 
 
 input{
 width:200px;
 height:40px;
-
+border-radius: 10px;
+border:none;
 }
 
 textarea{
 width:300px;
 height:100px;
 margin-bottom: 50px;
+border-radius: 10px;
+border:none;
 }
 
 .sousin{
@@ -154,6 +205,8 @@ font-weight: bold;
 
 .sousin:hover{
   cursor: pointer;
+  background-color:white;
+  color:lightslategray;
 }
 
 .contact h2{
@@ -165,10 +218,10 @@ font-weight: bold;
   margin-top: 50px;
   display:flex;
   margin-bottom: 100px;
+  justify-content: center;
 }
 
 .lasela{
-  margin-left: 500px;
   height:300px;
   margin-right: 59px;
 }
@@ -184,11 +237,157 @@ font-weight: bold;
   font-weight: bold;
 }
 
+.copy{
+text-align:center;
+}
+
 .app{
   margin-top: 100px;
 }
+
 .app-url:hover{
   color: lightcyan;
   background-color: olive;
   transition: all 0.8s;
+}
+
+.main-sub{
+  background-color:#f7c23c;
+  padding:70px 0;
+}
+
+.main-list{
+  display:flex;
+  justify-content: center;
+ }
+
+ .web{
+   margin-right:40px;
+   
+ }
+
+ #web-icon{
+  margin-bottom:6px;
+ }
+
+#web-icon,.bi-pencil-square{
+margin-top:30px;
+padding:50px;
+font-size:50px;
+background-color:white;
+border-radius: 50%;
+}
+
+.main-sub-title{
+  font-size:28px;
+}
+
+.main-sub-title::before{
+  content: '「';
+margin-right:40px;
+color:white;
+font-size:50px;
+}
+
+.main-sub-title::after{
+  content: '」';
+  margin-left:40px;
+  color:white;
+  font-size:50px;
+  }
+
+.web-title::before{
+content: '「';
+margin-right:20px;
+
+}
+
+.web-title::after{
+  content: '」';
+  margin-left:20px;
+  }
+
+  .blog-title::before{
+    content: '「';
+    margin-right:20px;
+    }
+    
+    .blog-title::after{
+      content: '」';
+      margin-left:20px;
+      }
+
+.web-coment{
+  font-size:12px;
+  border:2px dotted white;
+  padding:30px;
+}
+
+.blog-coment{
+  font-size:12px;
+  border:2px dotted white;
+  padding:30px;
+}
+
+.sakuhin{
+  background-color:#1d809f;
+  color:white;
+  font-weight:bold;
+  padding:15px 30px;
+  padding-bottom:30px;
+}
+
+.itirango{
+  margin-top:40px;
+}
+
+.app-title{
+padding-top:30px;
+}
+
+.lasela-isara{
+  height:300px;
+
+}
+
+
+.app,.website{
+  background-color: lightslategray;
+  padding:20px 40px;
+  color:white;
+  font-weight: bold;
+  border-radius: 10px;
+
+}
+
+
+.app:hover{
+  color: lightslategray;
+  background-color: white;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.website:hover{
+  color: lightslategray;
+  background-color: white;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+
+.footer{
+  
+  margin-top: 40px;
+  color:black;
+  font-size: small;
+
+}
+
+#footer-twitter{
+  background-color:lightslategray;
+  color:white;
+  padding:30px 30px;
+  font-size:30px;
+  border-radius: 50%;
 }
